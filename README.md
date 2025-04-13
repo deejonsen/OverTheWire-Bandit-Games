@@ -65,19 +65,6 @@ Each level has its own directory (e.g., level-0-1 for Level 0 → Level 1).
 
 ---
 
-
-## **Key Takeaways**
-
-### SSH Basics:
-- SSH (Secure Shell) is used for secure remote access to servers.
-- Default SSH port is `22`, but custom ports (e.g., `2220`) are often used for security.
-
-### Command-Line Tools:
-- **Linux/macOS:** Use the native `ssh` command.
-- **Windows:** Tools like PuTTY or Windows Subsystem for Linux (WSL) are required.
-- **Documentation:** Use `man ssh` to explore SSH options and flags.
-
-
 ### **Contribute:**
 Contributions are welcome! If you have:
   - Alternative solutions or optimizations.
@@ -101,13 +88,6 @@ Contributions are welcome! If you have:
 - **Ethical Use:** This guide is for educational purposes only. Use your skills responsibly.
 - **Do Not Copy-Paste:** Understand the commands instead of blindly running them.
 - **Join the Community:** Struggling? Ask for help on the [OverTheWire Forum](https://forum.overthewire.org/).
-
-
-### **Additional Notes**
-- **Password Security:** Passwords are not displayed when typed in Linux terminals.
-- **Troubleshooting:**
-  - Ensure the SSH client is installed (e.g., `openssh-client` on Debian-based systems).
-  - Verify network connectivity if the connection fails.
 
 
 Happy Hacking! 🚀
