@@ -75,7 +75,7 @@ Welcome to OverTheWire!
 ## --- Method 1: Directory Traversal ---
 ### Navigate to the Directory
 ```bash
-bandit2@bandit:~$ cd inhere
+bandit3@bandit:~$ cd inhere
 ```
 
 ## List all files (including hidden)
