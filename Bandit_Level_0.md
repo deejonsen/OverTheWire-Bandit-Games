@@ -61,6 +61,36 @@ Welcome to OverTheWire!
 
 ---
 
+## **Key Takeaways**
+
+### SSH Basics:
+- SSH (Secure Shell) is used for secure remote access to servers.
+- Default SSH port is `22`, but custom ports (e.g., `2220`) are often used for security.
+
+### Command-Line Tools:
+- **Linux/macOS:** Use the native `ssh` command.
+- **Windows:** Tools like PuTTY or Windows Subsystem for Linux (WSL) are required.
+- **Documentation:** Use `man ssh` to explore SSH options and flags.
+
+
+### **Additional Notes**
+- **Password Security:** Passwords are not displayed when typed in Linux terminals.
+- **Troubleshooting:**
+  - Ensure the SSH client is installed (e.g., `openssh-client` on Debian-based systems).
+  - Verify network connectivity if the connection fails.
+ 
+
+### **Acknowledgments**
+  - [OverTheWire](https://overthewire.org/) for creating the Bandit game.
+  - [SSH Documentation](https://www.openssh.com/manual.html)
+  - The cybersecurity community for fostering collaborative learning.
+
+
+
+Next Level: Bandit Level 1 → 2
+
+---
+
 ![Screenshot 2025-04-13 193700](https://github.com/user-attachments/assets/c0ae8b25-dedd-4c4c-bec4-8bec5df000ac)
 ![Screenshot 2025-04-13 193623](https://github.com/user-attachments/assets/24025232-ded1-4f82-9970-417eec7bc689)
 ![Screenshot 2025-04-13 193546](https://github.com/user-attachments/assets/6d9eabd6-5bab-4374-b83d-f4273cdab4d7)
