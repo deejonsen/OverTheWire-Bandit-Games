@@ -43,10 +43,10 @@ Each level has its own directory (e.g., level-0-1 for Level 0 → Level 1).
 - Key concepts and additional context.
 
 ### **Walkthroughs**
- Level        | Topic                                                             | Solution Links                |
-|-------------|-------------------------------------------------------------------|-------------------------------|
-| 0 → 1       | SSH, File Navigation	| [Level 0 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_0.md)              |
-| 1 → 2	     | File reading	                                                    | Level 1 Walkthrough              |
+ Level   | Topic                                                             | Solution Links                |
+|--------|-------------------------------------------------------------------|-------------------------------|
+| 0 → 1  | SSH, File Navigation| [Level 0 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_0.md)              |
+| 1 → 2	| File reading | [Level 1 Walkthrough](github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_1.md) |
 | 2 → 3       |                                                                   | Level 2 Walkthrough                              |
 | 3 → 4       |                                                                   | Level 3 Walkthrough                               |
 | 4 → 5       |                                                                   | Level 4 Walkthrough                               |
