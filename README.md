@@ -45,22 +45,22 @@ Each level has its own directory (e.g., level-0-1 for Level 0 → Level 1).
 ### **Walkthroughs**
  Level        | Topic                                                             | Solution Links                |
 |-------------|-------------------------------------------------------------------|-------------------------------|
-| 0 → 1       |	SSH, file navigation	                                            | Level 0 Solution              |
-| 1 → 2	      | File reading	                                                    | Level 1 Solution              |
-| 2 → 3       |                                                                   |                               |
-| 3 → 4       |                                                                   |                               |
-| 4 → 5       |                                                                   |                               |
-| 5 → 6       |                                                                   |                               |
-| 6 → 7       |                                                                   |                               |
-| 7 → 8       |                                                                   |                               |
-| 8 → 9       |                                                                   |                               | 
-| 9 → 10      |                                                                   |                               |
-| 10 → 11     |                                                                   |                               |  
-| 11 → 12     |                                                                   |                               |
-| 12 → 13     |                                                                   |                               |
-| 13 → 14     |                                                                   |                               |
-| 14 → 15     |                                                                   |                               |
-| 15 → 16     |                                                                   |                               |
+| 0 → 1       | SSH, File Navigation	| [Level 0 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_0.md)              |
+| 1 → 2	     | File reading	                                                    | Level 1 Walkthrough              |
+| 2 → 3       |                                                                   | Level 2 Walkthrough                              |
+| 3 → 4       |                                                                   | Level 3 Walkthrough                               |
+| 4 → 5       |                                                                   | Level 4 Walkthrough                               |
+| 5 → 6       |                                                                   | Level 5 Walkthrough                               |
+| 6 → 7       |                                                                   | Level 6 Walkthrough                               |
+| 7 → 8       |                                                                   | Level 7 Walkthrough                               |
+| 8 → 9       |                                                                   | Level 8 Walkthrough                              | 
+| 9 → 10      |                                                                   | Level 9 Walkthrough                              |
+| 10 → 11     |                                                                   | Level 10 Walkthrough                             |  
+| 11 → 12     |                                                                   | Level 11 Walkthrough                             |
+| 12 → 13     |                                                                   | Level 12 Walkthrough                              |
+| 13 → 14     |                                                                   | Level 13 Walkthrough                              |
+| 14 → 15     |                                                                   | Level 14 Walkthrough                                |
+| 15 → 16     |                                                                   | Level 15 Walkthrough                               |
 
 
 ---
