@@ -25,7 +25,7 @@ This report documents the solution and key learnings for **OverTheWire Bandit Le
   - **Server**: `bandit.labs.overthewire.org`  
   - **Port**: `2220`  
   - **Username**: `bandit1`  
-  - **Password**: `boJ9jbbUNNfktd78OOpsqOltutMc3MY1`
+  - **Password**: `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
 
 
 ### **Challenge**:  
