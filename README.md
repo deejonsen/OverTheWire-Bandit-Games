@@ -48,7 +48,7 @@ Each level has its own directory (e.g., level-0-1 for Level 0 → Level 1).
 | 0 → 1  | SSH, File Navigation| [Level 0 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_0.md)              |
 | 1 → 2	| File Reading | [Level 1 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_1.md) |
 | 2 → 3  | Filename Handling | [Level 2 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_2.md) |
-| 3 → 4       |                                                                   | Level 3 Walkthrough                               |
+| 3 → 4  | Accessing Hidden Files | [Level 3 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_3.md) |
 | 4 → 5       |                                                                   | Level 4 Walkthrough                               |
 | 5 → 6       |                                                                   | Level 5 Walkthrough                               |
 | 6 → 7       |                                                                   | Level 6 Walkthrough                               |
