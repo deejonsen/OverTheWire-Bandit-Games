@@ -95,7 +95,7 @@ So we got the next password🎉.
   - Use `head data.txt` to confirm the file is non-text.
  
 
-Next Level: Bandit Level 10 → 11
+Next Level: [Bandit Level 10 → 11](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_10.md)
 
 ---
 
