@@ -100,7 +100,7 @@ So we got the next password🎉.
   - Use `wc -l data.txt` to count lines if unsure about the file’s structure.
 
 
-Next Level: Bandit Level 8 → 9
+Next Level: [Bandit Level 8 → 9](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_8.md)
 
 ---
 
