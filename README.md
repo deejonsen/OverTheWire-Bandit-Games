@@ -51,16 +51,16 @@ Each level has its own directory (e.g., level-0-1 for Level 0 → Level 1).
 | 3 → 4  | Accessing Hidden Files | [Level 3 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_3.md) |
 | 4 → 5  | Linux Wildcards | [Level 4 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_4.md) |
 | 5 → 6  | Advanced File Searching | [Level 5 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_5.md) |
-| 6 → 7       |                                                                   | Level 6 Walkthrough                               |
-| 7 → 8       |                                                                   | Level 7 Walkthrough                               |
-| 8 → 9       |                                                                   | Level 8 Walkthrough                              | 
-| 9 → 10      |                                                                   | Level 9 Walkthrough                              |
-| 10 → 11     |                                                                   | Level 10 Walkthrough                             |  
-| 11 → 12     |                                                                   | Level 11 Walkthrough                             |
-| 12 → 13     |                                                                   | Level 12 Walkthrough                              |
-| 13 → 14     |                                                                   | Level 13 Walkthrough                              |
-| 14 → 15     |                                                                   | Level 14 Walkthrough                                |
-| 15 → 16     |                                                                   | Level 15 Walkthrough                               |
+| 6 → 7  | File Permissions | [Level 6 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_6.md) |
+| 7 → 8  |                                                                   | [Level 7 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_7.md)                               |
+| 8 → 9  |                                                                   | [Level 8 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_8.md)                              | 
+| 9 → 10 |                                                                   | [Level 9 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_9.md)                              |
+| 10 → 11 |                                                                   | [Level 10 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_10.md)                             |  
+| 11 → 12 |                                                                   | [Level 11 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_11.md)                             |
+| 12 → 13 |                                                                   | [Level 12 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_12.md)                              |
+| 13 → 14 |                                                                   | [Level 13 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_13.md)                              |
+| 14 → 15 |                                                                   | [Level 14 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_14.md)                                |
+| 15 → 16 |                                                                   | [Level 15 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_15.md)                               |
 
 
 ---
