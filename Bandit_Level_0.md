@@ -87,7 +87,7 @@ Welcome to OverTheWire!
 
 
 
-Next Level: Bandit Level 1 → 2
+Next Level: [Bandit Level 1 → 2](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_1.md)
 
 ---
 
