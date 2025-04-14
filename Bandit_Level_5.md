@@ -181,7 +181,7 @@ So we got the next password🎉.
 - Use `ls -l` to check file permissions (e.g., `-rw-r--r--` = non-executable).
 - Error `Permission denied`? Ensure you’re in the `inhere` directory.
 
-Next Level: Bandit Level 6 → 7
+Next Level: [Bandit Level 6 → 7](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_6.md)
 
 ---
 
