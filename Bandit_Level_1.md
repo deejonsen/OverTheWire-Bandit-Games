@@ -96,8 +96,7 @@ So we got the next password🎉.
 **Troubleshooting:**
 - Error `cat: -: No such file or directory`? Ensure you’re in the correct directory (`/home/bandit1`).
 
-Next Level: Bandit Level 2 → 3
-
+Next Level: [Bandit Level 2 → 3](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_2.md)
 ---
 
 
