@@ -83,7 +83,7 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 bandit2@bandit:~$ cat spaces\ in\ this\ filename
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ``` 
-So we got the next password.
+So we got the next password🎉.
 
 [https://overthewire.org/wargames/bandit/bandit3.html](https://overthewire.org/wargames/bandit/bandit3.html)
 
