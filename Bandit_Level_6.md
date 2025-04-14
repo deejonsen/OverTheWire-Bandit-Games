@@ -118,7 +118,7 @@ So we got the next password🎉.
 - `Permission denied`? Use `sudo` if allowed (not needed here).
 - Typos in ownership names? Double-check with `id bandit7` or `groups bandit6`.
 
-Next Level: Bandit Level 6 → 7
+Next Level: [Bandit Level 7 → 8](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_7.md)
 
 ---
 
