@@ -12,20 +12,34 @@
 
 
 ## **Overview**  
-This report documents the solution and key learnings for **OverTheWire Bandit Level 11 → 12**, focusing on decoding a ROT13-encoded file using the `tr` command to perform character substitution.
+This report documents the solution and key learnings for **OverTheWire Bandit Level 12 → 13**, focusing on reversing a hexdump and recursively decompressing a multi-layered file using `xxd`, `gzip`, `bzip2`, and `tar`.
 
 ---
 
 ## **Problem Statement**
-The password for the next level is stored in the file **data.txt**, where all lowercase `(a-z)` and uppercase `(A-Z)` letters have been rotated by 13 positions.
-**Substitution** means replacing one character with another. Substitution ciphers have been known and used for a very long time. Some of the most known are the Caesar and Vigenère ciphers. However, these simple substitution ciphers are not secure anymore!
+The password for the next level is stored in the file **data.txt**, which is a hexdump of a file that has been repeatedly compressed. For this level, it may be useful to create a directory under /tmp in which you can work using mkdir.
+- `mkdir <path>` can be used to create a new directory.
+- `cp <source> <destination>` copies files.
+- `mv <source> <destination>` moves or renames files.
 
-As the ‘Helpful Reading Material’ on the levels site mentions, rotating letters by 13 positions is the **ROT13** substitution cipher. It is nice because looking at the Latin alphabet with 26 letters the encryption algorithm equals the decryption algorithm.
+**Hexdumps** are often used when we want to look at data that cannot be represented in strings and therefore is not readable, so it is easier to look at the hex values. A hexdump has three main columns. The first shows the address, the second the hex representation of the data on that address and the last shows the actual data as strings (with ‘.’ being hex values that cannot be represented as a string). Many hex editors exist just pick the one you like most.
 
-The Linux `tr` command, which stands for ’translate’, allows replacing characters with others. The base command syntax looks like the following `tr <old_chars> <new_chars>`.
+For the command line `xxd` can be used. `xxd <input_file> <output_file>` creates hexdumps. When using the `-r` flag, it reverts the hexdump.
+
+Hexdumps can be used to figure out the type of a file. Each file type has a **magic number/file signature**. You can find lists with a collection of these different file signatures online. The file command, which was introduced in Level 5 also uses this method (and more beyond that). This is especially important to know because sometimes files might not have the correct or any file ending to identify its type.
+
+
+Compression is a method of encoding that aims to reduce the original size of a file without losing information (or only losing as little as possible).
+
+`gzip` is a command to compress or decompress (`-d`) files. A `‘gzip’` file generally ends with .gz.
+`bzip2` is another command which allows for compressing and decompressing (`-d`) files. A ‘bzip2’ file generally ends with `.bz2`.
+An **Archive File** is a file that contains one or multiple files and their metadata. This can allow easier portability.
+
+`tar` is a command that creates archive files (`-cf`). It also allows extracting these files again (`-xf`). A tar archive generally ends with `.tar`.
+
 
 ### **Task**:
-- Decode the ROT13-encoded password in `data.txt`.
+- Retrieve the password from `data.txt`, a hexdump of a file compressed multiple times with different algorithms.
   - **Server**: `bandit.labs.overthewire.org`  
   - **Port**: `2220`  
   - **Username**: `bandit12`  
@@ -33,78 +47,116 @@ The Linux `tr` command, which stands for ’translate’, allows replacing chara
 
 
 ### **Challenge**:  
-- All alphabetic characters in `data.txt` are rotated by 13 positions (ROT13 cipher).
+- The file is hexdumped, then compressed with `gzip`, `bzip2`, and archived with `tar` **multiple times**.
+
 ---
 
 ## 🚀**Solution Approach**
-Use the `tr` command to map characters using ROT13 substitution:  
-- **ROT13**: Replace each letter with the one 13 positions ahead in the alphabet (wrapping around).  
-- `A-Z` becomes `N-ZA-M`, `a-z` becomes `n-za-m`.
+1. **Workspace Setup**: Create a temporary directory to avoid cluttering the home folder.  
+2. **Hexdump Reversal**: Use `xxd -r` to convert the hexdump back to binary.  
+3. **Recursive Decompression**: Identify file types via magic numbers and decompress iteratively.  
+
 ---
 
 
 ### **Code Example**  
 ```bash
 # Connect to the server
-ssh bandit11@bandit.labs.overthewire.org -p 2220
+ssh bandit12@bandit.labs.overthewire.org -p 2220
 ```
 
 ### **Output**
 ```bash
-bandit11@bandit.labs.overthewire.org's password: [hidden input]
+bandit12@bandit.labs.overthewire.org's password: [hidden input]
 Welcome to OverTheWire!
 ```
 
-###  Decode ROT13 using tr
+###  Create a Temporary Workspace
 ```bash
-bandit11@bandit:~$ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
-The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+bandit12@bandit:~$ cd /tmp
+bandit12@bandit:~$ mktemp -d
+bandit12@bandit:~$ cd /tmp/tmp.9WKv0MOmR4
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ cp ~/data.txt .
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ mv data.txt hexdump_data
+```
+
+### Revert the Hexdump to Binary
+```bash
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ xxd -r hexdump_data > compressed_data
+```
+
+### Decompress layers (gzip → bzip2 → tar → ... → gzip)
+```bash
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ mv compressed_data compressed.gz
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ gzip -d compressed.gz
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ mv compressed compressed.bz2
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ bzip2 -d compressed.bz2
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ tar -xf compressed
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ tar -xf data5.bin
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ bzip2 -d data6.bin
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ tar -xf data6.bin.out
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ mv data8.bin data8.gz
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ gzip -d data8.gz
+```
+
+### Get the password
+```bash
+bandit12@bandit:/tmp/tmp.9WKv0MOmR4$ cat data8
+The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 ```
 
 So we got the next password🎉.
 
-[https://overthewire.org/wargames/bandit/bandit12.html](https://overthewire.org/wargames/bandit/bandit12.html)
+[https://overthewire.org/wargames/bandit/bandit13.html](https://overthewire.org/wargames/bandit/bandit13.html)
 
 ---
 
 ## Key Takeaways
 
-- **ROT13 Cipher:**
-  - A substitution cipher where each letter is shifted by 13 positions.
-  - **Self-inverse:** Encoding and decoding use the same algorithm (e.g., `tr 'A-Za-z' 'N-ZA-Mn-za-m'`).
+- **Hexdump Handling:**
+  - Use `xxd -r` to revert hexdumps to binary.
+  - Magic numbers (e.g., `1f8b` for gzip, `425a` for bzip2) identify file types.
 
-- **`tr` Command:**
-  - Translates or deletes characters (e.g., `tr <old_chars> <new_chars>`).
+- **Decompression Tools:**
+  - `gzip -d`, `bzip2 -d`, and `tar -xf` for layered extraction.
 
-- **Alias Tip:**
-  - Create shortcuts for common ciphers:
-```bash
-alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"  # ROT13 for letters
-alias rot5="tr '0-9' '5-90-4'"             # ROT5 for numbers
- ```
+- **File Signatures:**
+  - Check headers with `xxd | head` or `file <filename>` to determine compression type.
 
 ## References
-- [OverTheWire Bandit Level 11](https://overthewire.org/wargames/bandit/bandit11.html)
-- [Linux `tr` Command Guide](https://man7.org/linux/man-pages/man1/tr.1.html)
+- [OverTheWire Bandit Level 12](https://overthewire.org/wargames/bandit/bandit12.html)
+- [Linux `xxd` Manual](https://linux.die.net/man/1/xxd)
+- [File Signatures List](https://en.wikipedia.org/wiki/List_of_file_signatures)
 
 
  ## Additional Notes
- - **Alternative Methods:**
-   - Use online ROT13 decoders (e.g., rot13.com).
-   - Decode with Python:
+ - **Alternative Workflow:**
+    - Use `file` to auto-detect compression type at each step:
 
-```python
-python3 -c "import codecs; print(codecs.decode('Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh', 'rot_13'))"
+```bash
+file compressed_data | awk '{print $2}' # Returns "gzip", "bzip2", etc.
 ```
-- **Troubleshooting:**
-  - Ensure case sensitivity: `A-Za-z` covers uppercase and lowercase.
-  - Verify no typos in the `tr` substitution pattern.
 
-Next Level: Bandit Level 11 → 12
+- **Troubleshooting:**
+  - Permission denied? Use `chmod 700 /tmp/your_dir`.
+  - Use `ls -l` to track file ownership after extraction.
+
+Next Level: [Bandit Level 13 → 14](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_13.md)
 
 ---
 
 
-![Screenshot 2025-04-14 123554](https://github.com/user-attachments/assets/52b8d2a2-be0e-4c8d-8b7e-73f0f7abd29b)
-![Screenshot 2025-04-14 123415](https://github.com/user-attachments/assets/1a777047-c6f2-43ba-a21b-0f52ab7e4498)
-![Screenshot 2025-04-14 123351](https://github.com/user-attachments/assets/a03b7d62-881e-4595-8fc6-00fdfb285990)
+![Screenshot 2025-04-14 162135](https://github.com/user-attachments/assets/b7eaea28-645a-4707-a31e-53390020731f)
+![Screenshot 2025-04-14 162206](https://github.com/user-attachments/assets/8aa76960-614c-4a61-8667-5b512c04044a)
+![Screenshot 2025-04-14 162453](https://github.com/user-attachments/assets/bcb6c208-bf0a-41da-b865-942140e09c95)
+![Screenshot 2025-04-14 162514](https://github.com/user-attachments/assets/de1e4d3f-07ac-4fc6-9b8b-38f0957c6031)
+![Screenshot 2025-04-14 164531](https://github.com/user-attachments/assets/3b1bbe84-1772-4d17-9101-e9d8ff706ab4)
+![Screenshot 2025-04-14 164541](https://github.com/user-attachments/assets/0465c750-1441-486f-83e6-c3c0fae4566e)
+![Screenshot 2025-04-14 164804](https://github.com/user-attachments/assets/467b7d8f-66ae-478f-b8cd-96cf1c267b40)
+![Screenshot 2025-04-14 164816](https://github.com/user-attachments/assets/fb38b8de-6b90-41a8-b7d5-25867a6206cf)
+![Screenshot 2025-04-14 165036](https://github.com/user-attachments/assets/3ece604c-e462-4d25-9b4c-fb35556e0563)
+![Screenshot 2025-04-14 165108](https://github.com/user-attachments/assets/c6cf498c-ba89-4390-ba0a-c27d9fa1db41)
+![Screenshot 2025-04-14 165145](https://github.com/user-attachments/assets/afdf1cb0-1f52-418b-b070-d5f75c67a28f)
+![Screenshot 2025-04-14 165426](https://github.com/user-attachments/assets/fcb07c72-e53d-4058-a19b-f01416c7afe0)
+![Screenshot 2025-04-14 165623](https://github.com/user-attachments/assets/cba97f95-09f5-4c5b-a37c-302f5cf58528)
+![image](https://github.com/user-attachments/assets/209b1f6e-0f93-4cc0-9d9d-dcdb389bf59d)
