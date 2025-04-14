@@ -172,7 +172,7 @@ So we got the next password🎉.
 
 ## References
 - [OverTheWire Bandit Level 5](https://overthewire.org/wargames/bandit/bandit5.html)
-- [Linux `find` Command Guide](https://man7.org/linux/man-pages/man1/find.1.html))
+- [Linux `find` Command Guide](https://man7.org/linux/man-pages/man1/find.1.html)
 
  ## Additional Notes
  - Why `-size 1033c`?: The `c` suffix specifies bytes.
