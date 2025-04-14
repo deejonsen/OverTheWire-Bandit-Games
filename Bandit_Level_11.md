@@ -100,7 +100,7 @@ python3 -c "import codecs; print(codecs.decode('Gur cnffjbeq vf 5Gr8L4qetPEsPk8h
   - Ensure case sensitivity: `A-Za-z` covers uppercase and lowercase.
   - Verify no typos in the `tr` substitution pattern.
 
-Next Level: Bandit Level 11 → 12
+Next Level: [Bandit Level 12 → 13](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_12.md)
 
 ---
 
