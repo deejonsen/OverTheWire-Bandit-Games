@@ -50,7 +50,7 @@ Each level has its own directory (e.g., level-0-1 for Level 0 → Level 1).
 | 2 → 3  | Filename Handling | [Level 2 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_2.md) |
 | 3 → 4  | Accessing Hidden Files | [Level 3 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_3.md) |
 | 4 → 5  | Linux Wildcards | [Level 4 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_4.md) |
-| 5 → 6       |                                                                   | Level 5 Walkthrough                               |
+| 5 → 6  | Advanced File Searching | [Level 5 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_5.md) |
 | 6 → 7       |                                                                   | Level 6 Walkthrough                               |
 | 7 → 8       |                                                                   | Level 7 Walkthrough                               |
 | 8 → 9       |                                                                   | Level 8 Walkthrough                              | 
