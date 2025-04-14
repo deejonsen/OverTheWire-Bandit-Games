@@ -94,7 +94,7 @@ bandit4@bandit:~/inhere$ cat ./-file07
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 ```
 
-So we got the next password.
+So we got the next password🎉.
 
 [https://overthewire.org/wargames/bandit/bandit5.html](https://overthewire.org/wargames/bandit/bandit5-.html)
 
