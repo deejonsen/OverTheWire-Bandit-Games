@@ -99,7 +99,7 @@ bandit3@bandit:~$ cat inhere/. ...Hiding-From-You
 ```
 
 
-So we got the next password.
+So we got the next password🎉.
 
 [https://overthewire.org/wargames/bandit/bandit4.html](https://overthewire.org/wargames/bandit/bandit4-.html)
 
