@@ -115,7 +115,7 @@ So we got the next password🎉.
 - Use `ls -l` to confirm the exact filename.
 - Error `No such file or directory`? Check for typos or missing quotes/escape characters.
 
-Next Level: Bandit Level 3 → 4
+Next Level: [Bandit Level 3 → 4](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_3.md)
 
 ---
 
