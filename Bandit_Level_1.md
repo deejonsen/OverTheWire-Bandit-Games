@@ -64,7 +64,7 @@ bandit1@bandit:~$ cat < -
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
 
-So we got the next password.
+So we got the next password🎉.
 
 [https://overthewire.org/wargames/bandit/bandit2.html](https://overthewire.org/wargames/bandit/bandit2.html)
 
