@@ -45,7 +45,7 @@ Each level has its own directory (e.g., level-0-1 for Level 0 → Level 1).
 ### **Walkthroughs**
  Level   | Topic                                                             | Solution Links                |
 |--------|-------------------------------------------------------------------|-------------------------------|
-| 0 → 1  | SSH, File Navigation| [Level 0 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_0.md)              |
+| 0 → 1  | SSH, File Navigation| [Level 0 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_0.md) |
 | 1 → 2	| File Reading | [Level 1 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_1.md) |
 | 2 → 3  | Filename Handling | [Level 2 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_2.md) |
 | 3 → 4  | Accessing Hidden Files | [Level 3 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_3.md) |
@@ -57,10 +57,10 @@ Each level has its own directory (e.g., level-0-1 for Level 0 → Level 1).
 | 9 → 10 | Linux Strings Command | [Level 9 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_9.md) |
 | 10 → 11 | Decoding Base64 | [Level 10 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_10.md) |  
 | 11 → 12 | Substitution | [Level 11 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_11.md) |
-| 12 → 13 |                                                                   | [Level 12 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_12.md)                              |
-| 13 → 14 |                                                                   | [Level 13 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_13.md)                              |
-| 14 → 15 |                                                                   | [Level 14 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_14.md)                                |
-| 15 → 16 |                                                                   | [Level 15 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_15.md)                               |
+| 12 → 13 | Hexdump Reversal | [Level 12 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_12.md) |
+| 13 → 14 | SSH Private key | [Level 13 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_13.md) |
+| 14 → 15 | Use of netcat | [Level 14 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_14.md) |
+| 15 → 16 | SSL/TLS Encryption | [Level 15 Walkthrough](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_15.md) |
 
 
 ---
