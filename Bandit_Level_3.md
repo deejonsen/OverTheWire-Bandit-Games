@@ -135,7 +135,7 @@ So we got the next password🎉.
 
 
 
-Next Level: Bandit Level 4 → 5
+Next Level: [Bandit Level 4 → 5](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_4.md)
 
 ---
 
