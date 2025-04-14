@@ -101,7 +101,7 @@ sort data.txt | uniq -c | grep "1 "
   - Forgot to sort? `uniq -u` will miss duplicates if lines aren’t grouped.
   - Use `wc -l data.txt` to verify the file’s line count.
 
-Next Level: Bandit Level 9 → 10
+Next Level: [Bandit Level 9 → 10](https://github.com/deejonsen/OverTheWire-Bandit-Games/blob/main/Bandit_Level_9.md)
 
 ---
 
